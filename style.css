@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+        .item1{grid-area: logo;}
+        .item2{grid-area: list;}
+        .item3{grid-area: profile;}
+        .item4{grid-area: contant;}
+        .item5{grid-area: menu;}
+        .item6{grid-area: setting;}
+
+        .grid-contant{
+            display: grid;
+            grid-template-areas: 
+            'logo list list list list list'
+            'profile contant contant contant contant menu'
+            'profile contant contant contant contant menu'
+            'profile contant contant contant contant menu'
+            'setting setting setting setting setting setting'
+            'setting setting setting setting setting setting'
+            ;
+            grid-gap: 10px;
+            background-color: #2196F3;
+             padding: 10px;
+        }
+        .grid-contant > div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+             padding: 20px 0;
+             font-size: 50px;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            text-decoration: underline;
+        }
